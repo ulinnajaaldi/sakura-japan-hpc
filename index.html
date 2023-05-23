@@ -5,7 +5,155 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sakura Japan</title>
+    <link
+      rel="shortcut icon"
+      href="/dist/assets/logo.png"
+      type="image/x-icon"
+    />
     <link href="/dist/style/output.css" rel="stylesheet" />
   </head>
-  <body></body>
+  <body>
+    <header>
+      <img
+        src="/dist/assets/images/hero.png"
+        class="absolute right-0 top-0 z-[-10] m-auto h-[850px] w-full object-cover object-bottom"
+        alt="Hero Image"
+      />
+      <nav
+        class="fixed left-1/2 top-0 z-[100] mx-auto mt-16 w-full -translate-x-1/2 transition-all duration-300"
+        id="navbar"
+      >
+        <div class="container flex items-center justify-between">
+          <img src="/dist/assets/logo.png" alt="Logo" />
+          <ul class="flex flex-wrap gap-12 text-xl font-bold">
+            <li>
+              <a href="#">ABOUT JAPAN</a>
+            </li>
+            <li>
+              <a href="#">DESTINATION</a>
+            </li>
+            <li>
+              <a href="#">WHAT PEOPLE SAY</a>
+            </li>
+            <li>
+              <a href="#">GALLERY</a>
+            </li>
+          </ul>
+          <button
+            class="rounded-md border-4 border-accent px-11 py-6 text-2xl font-semibold transition-all duration-200 hover:bg-accent"
+          >
+            BOOKING
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="absolute left-0 top-0 h-[850px] w-full">
+        <div
+          class="container relative flex h-full flex-col items-center justify-center"
+        >
+          <div
+            class="absolute inset-0 left-1/2 top-1/2 h-[430px] w-[430px] -translate-x-1/2 -translate-y-1/2 transform rounded-full bg-[#F12A2A] mix-blend-overlay"
+            id="circle"
+          ></div>
+          <h1 class="text-[200px] font-bold">JAPAN</h1>
+          <p class="-translate-y-14 text-[25px] font-medium">LAND OF SAKURA</p>
+          <div
+            class="absolute bottom-16 left-20 flex flex-col items-start gap-8 text-[22px] font-medium"
+          >
+            <a href="#">INSTAGRAM</a>
+            <a href="#">FACEBOOK</a>
+            <a href="#">TWITTER</a>
+          </div>
+          <div
+            class="absolute -bottom-10 flex h-[129px] w-[756px] items-center justify-center rounded-md bg-white/20 backdrop-blur-lg"
+          >
+            <input
+              class="h-full flex-grow rounded-md bg-transparent px-9 py-6 text-[22px] font-medium focus:text-white/60 focus:outline-none"
+              placeholder="Find a good destination"
+            />
+            <button
+              class="h-full w-[146px] rounded-md bg-secondary text-[40px] font-medium"
+            >
+              GO
+            </button>
+          </div>
+        </div>
+      </section>
+      <section
+        class="container mt-[850px] flex flex-col items-center justify-center"
+      >
+        <div class="h-[90px] w-1 bg-secondary"></div>
+        <h2 class="mt-7 text-[25px] font-medium">
+          JAPAN <span class="font-semibold text-secondary">日本</span>
+        </h2>
+        <img
+          src="/dist/assets/logo.png"
+          alt="Logo Sakura Japan"
+          class="mx-8 mb-7 mt-10 self-start"
+        />
+        <div class="relative mx-8 flex items-end justify-between gap-16">
+          <div class="w-[472px] flex-1">
+            <p class="text-[25px] font-semibold text-secondary">
+              日本には何がありますか
+            </p>
+            <h1 class="w-full text-[100px] font-semibold leading-tight">
+              WHAT'S IN JAPAN
+            </h1>
+            <p class="mb-7 text-lg font-medium tracking-wider">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <div class="relative">
+              <video
+                id="myVideo"
+                src="/dist/assets/video/japan-cinematic.mp4"
+                class="h-[249px] w-full rounded-md object-cover object-center"
+              ></video>
+              <button
+                id="playButton"
+                class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 transform rounded-full bg-white p-5"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="44"
+                  height="44"
+                  viewBox="0 0 256 256"
+                >
+                  <path
+                    fill="#fd636b"
+                    d="M240 128a15.74 15.74 0 0 1-7.6 13.51L88.32 229.65a16 16 0 0 1-16.2.3A15.86 15.86 0 0 1 64 216.13V39.87a15.86 15.86 0 0 1 8.12-13.82a16 16 0 0 1 16.2.3l144.08 88.14A15.74 15.74 0 0 1 240 128Z"
+                  />
+                </svg>
+              </button>
+              <button
+                id="pauseButton"
+                class="absolute left-1/2 top-1/2 hidden -translate-x-1/2 -translate-y-1/2 transform rounded-full bg-white p-5"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="44"
+                  height="44"
+                  viewBox="0 0 24 24"
+                >
+                  <path fill="#fd636b" d="M14 19h4V5h-4M6 19h4V5H6v14Z" />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <img
+            src="/dist/assets/images/about-1.png"
+            class="ml-6 h-full w-[284px] object-cover"
+          />
+          <img
+            src="/dist/assets/images/about-2.png"
+            class="h-full w-[284px] object-cover"
+          />
+        </div>
+      </section>
+    </main>
+
+    <script src="/dist/script/app.js"></script>
+  </body>
 </html>
