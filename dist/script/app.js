@@ -33,7 +33,7 @@ pauseButton.addEventListener("mouseover", (event) => {
 //Navbar handleOnScroll
 const navbarElement = document.querySelector("#navbar");
 window.addEventListener("scroll", () => {
-  if (window.scrollY > 150) {
+  if (window.scrollY > 0) {
     navbarElement.classList.add(
       "bg-primary/10",
       "backdrop-blur",
@@ -41,6 +41,7 @@ window.addEventListener("scroll", () => {
       "py-3",
       "drop-shadow-md"
     );
+    navbarElement.classList.remove("mt-16");
   } else {
     navbarElement.classList.remove(
       "bg-primary/10",
@@ -49,5 +50,6 @@ window.addEventListener("scroll", () => {
       "py-3",
       "drop-shadow-md"
     );
+    navbarElement.classList.add("mt-16");
   }
 });
