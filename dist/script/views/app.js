@@ -82,6 +82,15 @@ const app = () => {
       cardDesc.classList.add("opacity-100");
     });
   });
+
+  const gradientGallery = document.querySelector("#gradientGallery");
+  const seeMoreGallery = document.querySelector("#seeMoreGallery");
+  seeMoreGallery.addEventListener("click", () => {
+    gradientGallery.classList.remove("h-[400px]");
+    gradientGallery.classList.add("h-[0px]");
+    seeMoreGallery.classList.remove("opacity-100");
+    seeMoreGallery.classList.add("opacity-0", "translate-y-5");
+  });
 };
 
 export default app;
