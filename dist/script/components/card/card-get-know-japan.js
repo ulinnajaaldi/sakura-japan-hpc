@@ -26,7 +26,9 @@ class CardGetKnowJapan extends HTMLElement {
           class="flex -translate-y-0 flex-col items-center transition-all duration-300"
           id="cardArrowContainer"
         >
-          <p class="text-3xl font-medium">${this.getAttribute("title")}</p>
+          <p class="text-lg sm:text-2xl xl:text-3xl font-medium">${this.getAttribute(
+            "title"
+          )}</p>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="50"
@@ -47,7 +49,7 @@ class CardGetKnowJapan extends HTMLElement {
           </svg>
         </div>
         <p
-          class="absolute bottom-3 left-1/2 w-full -translate-x-1/2 px-10 pt-8 text-center text-lg opacity-0 transition-all duration-300"
+          class="absolute bottom-3 left-1/2 w-full -translate-x-1/2 px-2 sm:px-7 xl:px-10 pt-8 text-center text-base xl:text-lg opacity-0 transition-all duration-300"
           id="cardDesc"
         >
         ${this.getAttribute("description")}

@@ -31,7 +31,7 @@ class PhotoFromTouristElement extends HTMLElement {
           <img
             src="${data.image}"
             alt="${data.destination}"
-            class="h-[540px] w-[768px] object-cover"
+            class="w-[250px] sm:w-[300px] md:w-[380px] lg:w-[550px] xl:w-[650px] h-[420px] md:h-[540px] 2xl:w-[768px] rounded-md object-cover"
           />
         </div>`;
     });

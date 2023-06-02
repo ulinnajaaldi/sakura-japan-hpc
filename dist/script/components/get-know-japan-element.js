@@ -40,7 +40,13 @@ class GetKnowJapanElement extends HTMLElement {
 
   render() {
     let cardList = "";
-    this.datas.map((data) => {
+    let dataToDisplay = this.datas;
+    if (window.innerWidth < 1024) {
+      dataToDisplay = this.datas.slice(0, 4);
+    } else {
+      dataToDisplay = this.datas;
+    }
+    dataToDisplay.map((data) => {
       cardList += `
         <card-get-know-japan
             title="${data.title}"
@@ -50,7 +56,7 @@ class GetKnowJapanElement extends HTMLElement {
         `;
     });
     this.innerHTML = `
-      <div class="grid grid-cols-5 items-center justify-center gap-0">
+      <div class="grid grid-cols-2 gap-2 md:grid-cols-4 lg:grid-cols-5 items-center justify-center md:gap-0">
         ${cardList}
     </div>`;
   }
